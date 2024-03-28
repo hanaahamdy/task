@@ -35,6 +35,7 @@ BoxDecoration buildBoxDecoration() {
         ColorManager.greyWhite,
         ColorManager.white,
         ColorManager.white,
+        ColorManager.white,
         ColorManager.greyWhite,
       ],
     ),

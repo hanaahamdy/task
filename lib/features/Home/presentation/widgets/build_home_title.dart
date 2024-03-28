@@ -8,6 +8,7 @@ class BuildHomeTitle extends StatelessWidget {
     return Text(
       AppStrings.homeTitle,
       style: TextStyleManager.title,
+
     );
   }
 }

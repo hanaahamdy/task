@@ -67,6 +67,11 @@ class AppSize {
   static double sH30 = 30.0.h;
   static double sH40 = 40.0.h;
   static double sH50 = 50.0.h;
+  static double sH70 = 70.0.h;
+
+  static double sH80 = 80.0.h;
+  static double sH100 = 100.0.h;
+
 
 
   // VALUES FOR WIDTH

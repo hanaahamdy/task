@@ -11,7 +11,7 @@ class BuildButton extends StatelessWidget {
       buttonHeight: MediaQuery.of(context).size.height *.07,
       borderSideColor: ColorManager.red,
       backgroundColor: ColorManager.white,
-      buttonHMargin:AppSize.sH50,
+      buttonHMargin:AppSize.sH30,
       buttonLabel: AppStrings.homeButtonTitle,
     );
   }

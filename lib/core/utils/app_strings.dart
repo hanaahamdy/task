@@ -1,6 +1,6 @@
 class AppStrings {
-  static const String homeTitle = "جلسة جديدة/اضافة ارقام اللاعبين";
-  static const String selectNumber = "اختبار اللأرقام من قائمة الاتصال";
+  static const String homeTitle = "جلسة جديدة / اضافة ارقام اللاعبين";
+  static const String selectNumber = "اختيار اللأرقام من قائمة الاتصال";
   static const String homeButtonTitle = "انشاء الجلسة";
   static const String playerNumber = "اللاعب رقم";
   static const String contactNumberExist =

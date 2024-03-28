@@ -12,10 +12,7 @@ class BuildSelectNumberButton extends StatelessWidget {
           Icons.navigate_next,
           color: ColorManager.black,
         ),
-        leading: const Icon(
-          Icons.camera_rear_rounded,
-          color: ColorManager.black,
-        ),
+        leading: Image.asset(AssetsManager.contactImage,scale: 3,),
         title: GestureDetector(
           onTap: () {
             BlocProvider.of<HomeBloc>(context).selectPlayerContactNumber();

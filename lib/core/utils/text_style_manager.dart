@@ -5,14 +5,15 @@ import 'package:task/core/utils/font_size.dart';
 abstract class TextStyleManager {
   static TextStyle title = TextStyle(
     color: ColorManager.black,
-    fontSize:FontSize.s18,
-    fontWeight: FontWeight.w500
+
+    fontSize:FontSize.s22,
+    fontWeight: FontWeight.bold
   );
   static const TextStyle textButtonStyle= TextStyle(
       decoration: TextDecoration.underline,
       decorationColor: ColorManager.black,
       color: ColorManager.black);
   static  TextStyle textFieldStyle= TextStyle(
-      color: ColorManager.black,fontSize: FontSize.s12);
+      color: ColorManager.black,fontSize: FontSize.s22);
   static  TextStyle buttonStyle= TextStyle(fontSize: FontSize.s14, color: ColorManager.black);
 }

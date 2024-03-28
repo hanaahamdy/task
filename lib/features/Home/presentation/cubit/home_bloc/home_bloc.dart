@@ -29,10 +29,10 @@ class HomeBloc extends Cubit<HomeStates> {
     bool check = checkNumberExistence(text: contactNumber);
     if (check) {
       Fluttertoast.showToast(
-          msg: AppStrings.contactNumberExist,
-         );
+        msg: AppStrings.contactNumberExist,
+      );
     } else {
-      addContactNumberToList(contactNumber:contactNumber);
+      addContactNumberToList(contactNumber: contactNumber);
     }
   }
 
@@ -48,7 +48,7 @@ class HomeBloc extends Cubit<HomeStates> {
     return false;
   }
 
-  void addContactNumberToList({required String contactNumber}){
+  void addContactNumberToList({required String contactNumber}) {
     contactNumbersList.add(
       TextFieldModel(
         controller: TextEditingController(
@@ -62,5 +62,27 @@ class HomeBloc extends Cubit<HomeStates> {
   void removeContactNumber(int index) {
     contactNumbersList.removeAt(index);
     emit(RemoveFromListState());
+  }
+
+  String val = '';
+
+  void search({required String value, required int index}) {
+    if(checkNumberExistence(text: value)){
+      Fluttertoast.showToast(msg: "هذا الرقم موجود من قبل");
+    }
+   // if(contactNumbersList.single.controller.text==value){}
+   //  if (contactNumbersList.any((element) {
+   //    element.controller.text == value;
+   //    Fluttertoast.showToast(msg: "هذا الرقم موجود من قبل");
+   //    return true;
+   //  },));
+    // bool res=checkNumberExistence(text: value);
+    // if (res) {
+    //   Fluttertoast.showToast(msg: "هذا الرقم موجود من قبل").then(
+    //     (value) {
+    //       // removeContactNumber(index);
+    //     },
+    //   );
+    // }
   }
 }
