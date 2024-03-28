@@ -5,7 +5,7 @@ class BuildButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultButton(
+    return DefaultButton(labelStyle: TextStyleManager.buttonStyle,
       onPressed: () {},
       radius: 12.r,
       buttonHeight: MediaQuery.of(context).size.height *.07,
@@ -13,6 +13,7 @@ class BuildButton extends StatelessWidget {
       backgroundColor: ColorManager.white,
       buttonHMargin:AppSize.sH30,
       buttonLabel: AppStrings.homeButtonTitle,
+
     );
   }
 }

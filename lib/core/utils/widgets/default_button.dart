@@ -17,7 +17,7 @@ class DefaultButton extends StatelessWidget {
   final double? buttonHeight;
   final double? buttonHPadding;
   final double? buttonVPadding;
-
+final TextStyle labelStyle;
   const DefaultButton(
       {super.key,
       this.buttonWidth,
@@ -30,7 +30,7 @@ class DefaultButton extends StatelessWidget {
       this.radius,
       this.buttonHeight,
       this.buttonHPadding,
-      this.buttonVPadding});
+      this.buttonVPadding, required this.labelStyle});
 
   @override
   Widget build(BuildContext context) {

@@ -15,5 +15,5 @@ abstract class TextStyleManager {
       color: ColorManager.black);
   static  TextStyle textFieldStyle= TextStyle(
       color: ColorManager.black,fontSize: FontSize.s22);
-  static  TextStyle buttonStyle= TextStyle(fontSize: FontSize.s14, color: ColorManager.black);
+  static  TextStyle buttonStyle= TextStyle(fontSize: FontSize.s16, color: ColorManager.black);
 }

@@ -7,6 +7,5 @@ class ColorManager {
   static const white = Colors.white;
   static final opacityWhite = Colors.white.withOpacity(.85);
   static const red = Colors.red;
-  static final greyWhite =
-      Colors.grey.withOpacity(ConstantManager.homeGreyOpacity);
+  static final greyWhite = Colors.grey.withOpacity(ConstantManager.homeGreyOpacity);
 }

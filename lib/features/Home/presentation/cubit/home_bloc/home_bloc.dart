@@ -64,8 +64,6 @@ class HomeBloc extends Cubit<HomeStates> {
     emit(RemoveFromListState());
   }
 
-  String val = '';
-
   void search({required String value, required int index}) {
     if(checkNumberExistence(text: value)){
       Fluttertoast.showToast(msg: "هذا الرقم موجود من قبل");
